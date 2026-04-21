@@ -1,0 +1,30 @@
+{
+    "name": "php",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "tailwind:watch": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/style.css --watch",
+        "sync": "browser-sync start --proxy \"localhost:8080\" --files \"public/assets/css/style.css, views/**/*.php, app/**/*.php\"",
+        "dev": "concurrently \"npm run tailwind:watch\" \"npm run sync\"",
+        "build": "tailwindcss -i ./public/assets/css/input.css -o ./public/assets/css/style.css --minify"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nontouch-dev/PHP-Learning.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/nontouch-dev/PHP-Learning/issues"
+    },
+    "homepage": "https://github.com/nontouch-dev/PHP-Learning#readme",
+    "devDependencies": {
+        "@tailwindcss/cli": "^4.2.4",
+        "browser-sync": "^3.0.4",
+        "concurrently": "^9.2.1",
+        "tailwindcss": "^4.2.4"
+    }
+}

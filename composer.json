@@ -1,0 +1,13 @@
+{
+    "name": "nontouch/php",
+    "description": "PHP Setup",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "bramus/router": "^1.6"
+    }
+}

@@ -1,0 +1,10 @@
+/enterprise-php-app
+├── /app                # โค้ด Application หลักของเราทั้งหมด
+│   ├── /Controllers
+│   ├── /Models
+│   └── /Core           # แกนกลางระบบ เช่น คลาสจัดการ Database
+├── /public             # Document Root ของ Web Server (ให้ User เข้าถึงโฟลเดอร์นี้เท่านั้น)
+│   └── index.php       # Front Controller (ทุก Request ต้องวิ่งผ่านไฟล์นี้)
+├── /routes             # กำหนด URL routing
+├── /views              # ไฟล์ UI (HTML/Templates)
+└── composer.json       # ไฟล์จัดการ Dependency และ Autoload
