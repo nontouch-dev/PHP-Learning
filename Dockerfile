@@ -14,3 +14,5 @@ RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf
 
 # 4. ตั้งค่าสิทธิ์การเข้าถึงไฟล์
 RUN chown -R www-data:www-data /var/www/html
+
+# docker compose up -d --build
